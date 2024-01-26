@@ -1,0 +1,33 @@
+{
+    "diskguid": "0A6E2C81-92A1-44DD-86D9-978EA2E1F420",
+    "config": "boot/conf.dat",
+    "initrd": { 
+		"type": "tar", 
+		"gzip": true, 
+		"directory": [ 
+			"boot" 
+		]
+	},
+    "iso9660": 0,
+    "partitions": [
+        { 
+			"type": "boot", 
+			"name": "boot",
+			"size": 16 
+		},
+        { 
+			"type": "8484680C-9521-48C6-9C11-B0720656F69E", 
+			"driver": "fat",
+			"size": 1024, 
+			"name": "user", 
+			"directory": "user"
+		},
+        { 
+			"type": "4F68BCE3-E8CD-4DB1-96E7-FBCAF984B709", 
+			"driver": "fat",
+			"size": 512, 
+			"name": "root", 
+			"directory": "root"
+		}
+    ]
+}
