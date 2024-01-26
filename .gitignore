@@ -2,3 +2,6 @@
 *.d
 *.o
 *.vdi
+
+kernel.txt
+kern.bin
